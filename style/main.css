@@ -1,0 +1,80 @@
+/* public styles */
+
+* {
+  box-sizing: border-box;
+}
+
+main,
+footer {
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+}
+
+button {
+  color: hsl(0, 0%, 95%) !important;
+  padding: 15px 30px !important;
+  border: 2px solid white !important;
+}
+
+button:hover {
+  background-color: white !important;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  max-width: 85%;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* style start */
+
+main {
+  height: 100vh;
+}
+
+.sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.sedans button:hover {
+  color: hsl(31, 77%, 52%) !important;
+}
+
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.suvs button:hover {
+  color: hsl(184, 100%, 22%) !important;
+}
+
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover {
+  color: hsl(179, 100%, 13%) !important;
+}
+
+/* media  */
+@media (max-width: 991px) {
+  .container,
+  main {
+    height: unset !important;
+  }
+  .sedans {
+    border-radius: 0% !important;
+    border-top-right-radius: 10px !important;
+    border-top-left-radius: 10px !important;
+  }
+  .luxury {
+    border-radius: 0% !important;
+    border-bottom-right-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+  }
+}
